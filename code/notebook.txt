@@ -1,0 +1,279 @@
+/cm/local/apps/slurm/var/spool/job684872/slurm_script: line 14: cd: /mnt/isilon/cscb/shovik/vitessce: No such file or directory
+[I 2023-05-30 15:09:30.262 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2023-05-30 15:09:30.340 ServerApp] Package jupyter_lsp took 0.0774s to import
+[W 2023-05-30 15:09:30.340 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[W 2023-05-30 15:09:30.341 ServerApp] jupyter_server_fileid | error adding extension (enabled: True): The module 'jupyter_server_fileid' could not be found (No module named 'jupyter_server_fileid'). Are you sure the extension is installed?
+    Traceback (most recent call last):
+      File "/cm/shared/easybuild/software/Python/3.10.4-GCCcore-11.3.0/lib/python3.10/site-packages/jupyter_server/extension/manager.py", line 319, in add_extension
+        extpkg = ExtensionPackage(name=extension_name, enabled=enabled)
+      File "/cm/shared/easybuild/software/Python/3.10.4-GCCcore-11.3.0/lib/python3.10/site-packages/jupyter_server/extension/manager.py", line 183, in __init__
+        self._load_metadata()
+      File "/cm/shared/easybuild/software/Python/3.10.4-GCCcore-11.3.0/lib/python3.10/site-packages/jupyter_server/extension/manager.py", line 198, in _load_metadata
+        raise ExtensionModuleNotFound(msg) from None
+    jupyter_server.extension.utils.ExtensionModuleNotFound: The module 'jupyter_server_fileid' could not be found (No module named 'jupyter_server_fileid'). Are you sure the extension is installed?
+[I 2023-05-30 15:09:30.413 ServerApp] Package jupyter_server_terminals took 0.0701s to import
+[W 2023-05-30 15:09:30.413 ServerApp] jupyter_server_ydoc | error adding extension (enabled: True): The module 'jupyter_server_ydoc' could not be found (No module named 'jupyter_server_ydoc'). Are you sure the extension is installed?
+    Traceback (most recent call last):
+      File "/cm/shared/easybuild/software/Python/3.10.4-GCCcore-11.3.0/lib/python3.10/site-packages/jupyter_server/extension/manager.py", line 319, in add_extension
+        extpkg = ExtensionPackage(name=extension_name, enabled=enabled)
+      File "/cm/shared/easybuild/software/Python/3.10.4-GCCcore-11.3.0/lib/python3.10/site-packages/jupyter_server/extension/manager.py", line 183, in __init__
+        self._load_metadata()
+      File "/cm/shared/easybuild/software/Python/3.10.4-GCCcore-11.3.0/lib/python3.10/site-packages/jupyter_server/extension/manager.py", line 198, in _load_metadata
+        raise ExtensionModuleNotFound(msg) from None
+    jupyter_server.extension.utils.ExtensionModuleNotFound: The module 'jupyter_server_ydoc' could not be found (No module named 'jupyter_server_ydoc'). Are you sure the extension is installed?
+[I 2023-05-30 15:09:30.428 ServerApp] Package nbclassic took 0.0146s to import
+[W 2023-05-30 15:09:30.449 ServerApp] A `_jupyter_server_extension_points` function was not found in nbclassic. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-05-30 15:09:30.449 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2023-05-30 15:09:30.449 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-05-30 15:09:30.453 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2023-05-30 15:09:30.458 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2023-05-30 15:09:30.463 ServerApp] jupyterlab | extension was successfully linked.
+[W 2023-05-30 15:09:30.469 NotebookApp] 'use_redirect_file' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-05-30 15:09:30.472 ServerApp] nbclassic | extension was successfully linked.
+[W 2023-05-30 15:09:32.465 ServerApp] jupyter_server_ydoc | error adding extension (enabled: True): The module 'jupyter_server_ydoc' could not be found (No module named 'jupyter_server_ydoc'). Are you sure the extension is installed?
+    Traceback (most recent call last):
+      File "/cm/shared/easybuild/software/Python/3.10.4-GCCcore-11.3.0/lib/python3.10/site-packages/jupyter_server/extension/manager.py", line 319, in add_extension
+        extpkg = ExtensionPackage(name=extension_name, enabled=enabled)
+      File "/cm/shared/easybuild/software/Python/3.10.4-GCCcore-11.3.0/lib/python3.10/site-packages/jupyter_server/extension/manager.py", line 183, in __init__
+        self._load_metadata()
+      File "/cm/shared/easybuild/software/Python/3.10.4-GCCcore-11.3.0/lib/python3.10/site-packages/jupyter_server/extension/manager.py", line 198, in _load_metadata
+        raise ExtensionModuleNotFound(msg) from None
+    jupyter_server.extension.utils.ExtensionModuleNotFound: The module 'jupyter_server_ydoc' could not be found (No module named 'jupyter_server_ydoc'). Are you sure the extension is installed?
+[I 2023-05-30 15:09:32.465 ServerApp] notebook_shim | extension was successfully linked.
+[I 2023-05-30 15:09:33.104 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-05-30 15:09:33.107 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2023-05-30 15:09:33.108 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2023-05-30 15:09:33.109 LabApp] JupyterLab extension loaded from /home/smithd30/.local/lib/python3.10/site-packages/jupyterlab
+[I 2023-05-30 15:09:33.109 LabApp] JupyterLab application directory is /home/smithd30/.local/share/jupyter/lab
+[I 2023-05-30 15:09:33.110 LabApp] Extension Manager is 'pypi'.
+[I 2023-05-30 15:09:33.113 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-05-30 15:09:33.150 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-05-30 15:09:33.150 ServerApp] Serving notebooks from local directory: /mnt/isilon/cscb/codex/shovik/vitessce/code
+[I 2023-05-30 15:09:33.150 ServerApp] Jupyter Server 2.5.0 is running at:
+[I 2023-05-30 15:09:33.150 ServerApp] http://c-11-12:8888/lab?token=d30c7775aae82df38c28579ac22e6882560d9fcb774d0419
+[I 2023-05-30 15:09:33.150 ServerApp]     http://127.0.0.1:8888/lab?token=d30c7775aae82df38c28579ac22e6882560d9fcb774d0419
+[I 2023-05-30 15:09:33.150 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2023-05-30 15:09:33.165 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/smithd30/.local/share/jupyter/runtime/jpserver-899667-open.html
+    Or copy and paste one of these URLs:
+        http://c-11-12:8888/lab?token=d30c7775aae82df38c28579ac22e6882560d9fcb774d0419
+        http://127.0.0.1:8888/lab?token=d30c7775aae82df38c28579ac22e6882560d9fcb774d0419
+[I 2023-05-30 15:09:35.494 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2023-05-30 15:20:01.060 LabApp] Generating new user for token-authenticated request: 9893794efcf54a25ae8716097f221887
+[I 2023-05-30 15:20:05.112 LabApp] Build is up to date
+[W 2023-05-30 15:20:05.873 ServerApp] Notebook vitessce_data_processing.ipynb is not trusted
+[I 2023-05-30 15:20:06.654 ServerApp] Kernel started: a141c92b-913c-4c35-91f0-92f19510feaf
+[I 2023-05-30 15:20:06.666 ServerApp] Kernel started: 6b61da80-ca07-424d-8781-a7d0e048f65e
+[IPKernelApp] ERROR | Failed to create history session in /home/smithd30/.ipython/profile_default/history.sqlite. History will not be saved.
+Traceback (most recent call last):
+  File "/mnt/isilon/cscb/software/anaconda3/envs/imageAnalysis/lib/python3.10/site-packages/IPython/core/history.py", line 571, in __init__
+    self.new_session()
+  File "/mnt/isilon/cscb/software/anaconda3/envs/imageAnalysis/lib/python3.10/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/mnt/isilon/cscb/software/anaconda3/envs/imageAnalysis/lib/python3.10/site-packages/IPython/core/history.py", line 60, in only_when_enabled
+    return f(self, *a, **kw)
+  File "/mnt/isilon/cscb/software/anaconda3/envs/imageAnalysis/lib/python3.10/site-packages/IPython/core/history.py", line 595, in new_session
+    with conn:
+sqlite3.OperationalError: database is locked
+[I 2023-05-30 15:20:15.072 ServerApp] Connecting to kernel 6b61da80-ca07-424d-8781-a7d0e048f65e.
+[I 2023-05-30 15:20:15.137 ServerApp] Starting buffering for 6b61da80-ca07-424d-8781-a7d0e048f65e:207995b8-8282-43a2-ab3b-20d9acd4d963
+[IPKernelApp] ERROR | Failed to create history session in /home/smithd30/.ipython/profile_default/history.sqlite. History will not be saved.
+Traceback (most recent call last):
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/history.py", line 545, in __init__
+    self.new_session()
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/history.py", line 60, in only_when_enabled
+    return f(self, *a, **kw)
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/history.py", line 575, in new_session
+    self.session_number = cur.lastrowid
+sqlite3.OperationalError: database is locked
+[I 2023-05-30 15:20:20.152 ServerApp] Connecting to kernel a141c92b-913c-4c35-91f0-92f19510feaf.
+[I 2023-05-30 15:20:20.168 ServerApp] Connecting to kernel 6b61da80-ca07-424d-8781-a7d0e048f65e.
+[I 2023-05-30 15:20:20.183 ServerApp] Connecting to kernel 6b61da80-ca07-424d-8781-a7d0e048f65e.
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 492ab24b-9dfe-4d5d-9b46-e12d241971e7
+[W 2023-05-30 15:20:20.242 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x7ffff1596800>
+[IPKernelApp] ERROR | Exception in message handler:
+Traceback (most recent call last):
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 409, in dispatch_shell
+    await result
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 798, in inspect_request
+    reply_content = self.do_inspect(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 555, in do_inspect
+    bundle = self.shell.object_inspect_mime(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/interactiveshell.py", line 1838, in object_inspect_mime
+    return self.inspector._get_info(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/oinspect.py", line 738, in _get_info
+    info_dict = self.info(obj, oname=oname, info=info, detail_level=detail_level)
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/oinspect.py", line 838, in info
+    if info and info.parent and hasattr(info.parent, HOOK_NAME):
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/pandas/core/generic.py", line 1527, in __nonzero__
+    raise ValueError(
+ValueError: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+[I 2023-05-30 15:22:06.073 ServerApp] Saving file at /vitessce_data_processing.ipynb
+[W 2023-05-30 15:22:06.075 ServerApp] Notebook vitessce_data_processing.ipynb is not trusted
+[IPKernelApp] ERROR | Exception in message handler:
+Traceback (most recent call last):
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 409, in dispatch_shell
+    await result
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 798, in inspect_request
+    reply_content = self.do_inspect(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 555, in do_inspect
+    bundle = self.shell.object_inspect_mime(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/interactiveshell.py", line 1838, in object_inspect_mime
+    return self.inspector._get_info(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/oinspect.py", line 738, in _get_info
+    info_dict = self.info(obj, oname=oname, info=info, detail_level=detail_level)
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/oinspect.py", line 838, in info
+    if info and info.parent and hasattr(info.parent, HOOK_NAME):
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/pandas/core/generic.py", line 1527, in __nonzero__
+    raise ValueError(
+ValueError: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+[I 2023-05-30 15:24:06.130 ServerApp] Saving file at /vitessce_data_processing.ipynb
+[W 2023-05-30 15:24:06.131 ServerApp] Notebook vitessce_data_processing.ipynb is not trusted
+[I 2023-05-30 15:24:11.215 LabApp] Generating new user for token-authenticated request: 5ac6a614e117453dba593de2838105ad
+[I 2023-05-30 15:24:11.812 ServerApp] Generating new user for token-authenticated request: 43c975ee5423466ea695c5bbdf3ea894
+[I 2023-05-30 15:24:11.819 ServerApp] Generating new user for token-authenticated request: 48d37cf8ce8d429ba30eac4f82c091d0
+[I 2023-05-30 15:24:11.826 LabApp] Generating new user for token-authenticated request: fe452f21abef4f7eb14e2a778e57b699
+[I 2023-05-30 15:24:12.217 ServerApp] Generating new user for token-authenticated request: 9a02a143f43a48e5ba8808f03288536d
+[I 2023-05-30 15:24:12.219 ServerApp] Generating new user for token-authenticated request: ac08ca2cffff4dda9c4597b597b430fc
+[I 2023-05-30 15:24:12.220 ServerApp] Generating new user for token-authenticated request: ed16f5c6e5ab481284a44faada4ff4ac
+[I 2023-05-30 15:24:12.220 TerminalsExtensionApp] Generating new user for token-authenticated request: fbbf0b52749e464a8d0ce19c04b9f0a7
+[I 2023-05-30 15:24:12.221 ServerApp] Generating new user for token-authenticated request: 766048932f3148cf9553602d300b27e5
+[I 2023-05-30 15:24:12.226 ServerApp] Generating new user for token-authenticated request: 189088d6ffaa4699b51ad5262bd4619b
+[I 2023-05-30 15:24:13.341 ServerApp] Generating new user for token-authenticated request: fa642e3d4fff481d8a42f0336af54cc3
+[I 2023-05-30 15:24:13.401 ServerApp] Generating new user for token-authenticated request: 9e8b4b2f53d84a0f907acb961ba49f61
+[I 2023-05-30 15:24:13.451 LabApp] Generating new user for token-authenticated request: 5b831f02415b4ebda7d5a0d4c64beee9
+[I 2023-05-30 15:24:13.597 ServerApp] Generating new user for token-authenticated request: a7591879ccb242049b5904163dfc8b0f
+[I 2023-05-30 15:24:13.621 ServerApp] Connecting to kernel a141c92b-913c-4c35-91f0-92f19510feaf.
+[I 2023-05-30 15:24:13.635 ServerApp] Connecting to kernel 6b61da80-ca07-424d-8781-a7d0e048f65e.
+[I 2023-05-30 15:24:13.661 ServerApp] Generating new user for token-authenticated request: d1719bcd45c14e2a994f04534bf00b65
+[I 2023-05-30 15:24:13.673 ServerApp] Generating new user for token-authenticated request: 2b2aa137ae2d455a8e8d219ec9c66c6f
+[I 2023-05-30 15:24:13.774 LabApp] Generating new user for token-authenticated request: 508608040b9f4787815e5690a7f86e19
+[I 2023-05-30 15:24:13.797 LabApp] Generating new user for token-authenticated request: 79757905493f43bd8c0e1d725c65906c
+[I 2023-05-30 15:24:13.869 LabApp] Generating new user for token-authenticated request: a8b2a87db9474ca2bf87650ea79467b9
+[I 2023-05-30 15:24:13.983 ServerApp] 302 GET /kernelspecs/vitessce/logo-64x64.png (@172.16.9.187) 0.56ms
+[I 2023-05-30 15:24:13.984 ServerApp] 302 GET /kernelspecs/imageanalysis/logo-64x64.png (@172.16.9.187) 0.39ms
+[I 2023-05-30 15:24:13.989 ServerApp] 302 GET /kernelspecs/vitessce/logo-64x64.png (@172.16.9.187) 0.49ms
+[I 2023-05-30 15:24:13.989 ServerApp] 302 GET /kernelspecs/imageanalysis/logo-64x64.png (@172.16.9.187) 0.35ms
+[I 2023-05-30 15:24:13.994 ServerApp] Generating new user for token-authenticated request: bb758efe00004e288563270fb48fe642
+[I 2023-05-30 15:24:13.999 LabApp] Build is up to date
+[I 2023-05-30 15:24:14.000 ServerApp] Generating new user for token-authenticated request: 6dd2c71354c545349ef388ea1e6940dc
+[I 2023-05-30 15:24:14.001 ServerApp] Generating new user for token-authenticated request: 1f6e4ed27df1414ba5d064404c757574
+[I 2023-05-30 15:24:14.058 ServerApp] Generating new user for token-authenticated request: 130e51719efd4fd3bccbef9a6154d0e4
+[I 2023-05-30 15:24:14.060 ServerApp] Generating new user for token-authenticated request: d156253358de46fdb7f80c6eb26b2372
+[I 2023-05-30 15:24:14.125 ServerApp] Generating new user for token-authenticated request: 1012756c10004011a9cec72448784ebb
+[I 2023-05-30 15:24:14.202 LabApp] Generating new user for token-authenticated request: 9c0eb356fa274bde9fbb3c5dc31c2be2
+[I 2023-05-30 15:24:14.222 ServerApp] Generating new user for token-authenticated request: 9fc26019b3364359a54d23ab9739f1d2
+[I 2023-05-30 15:24:14.236 ServerApp] Generating new user for token-authenticated request: 87b5f2c28e5d4fd697593d0d12e92d86
+[I 2023-05-30 15:24:14.237 ServerApp] Generating new user for token-authenticated request: 97cbfc2e3fd843ff95982bbad7d4f558
+[W 2023-05-30 15:24:14.254 ServerApp] Notebook vitessce_data_processing.ipynb is not trusted
+[I 2023-05-30 15:24:14.300 ServerApp] Generating new user for token-authenticated request: b8647e63975b419eaff31722887c3f98
+[I 2023-05-30 15:24:14.445 ServerApp] Generating new user for token-authenticated request: 9fb668715cc7435f98310f5747d85ab0
+[I 2023-05-30 15:24:14.447 ServerApp] Generating new user for token-authenticated request: b7b24b933e8e49edb7774c60a7a873f7
+[I 2023-05-30 15:24:14.475 ServerApp] Generating new user for token-authenticated request: a17797e2bcf842b78db43e92229a9f6f
+[IPKernelApp] ERROR | Exception in message handler:
+Traceback (most recent call last):
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 409, in dispatch_shell
+    await result
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 798, in inspect_request
+    reply_content = self.do_inspect(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 555, in do_inspect
+    bundle = self.shell.object_inspect_mime(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/interactiveshell.py", line 1838, in object_inspect_mime
+    return self.inspector._get_info(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/oinspect.py", line 738, in _get_info
+    info_dict = self.info(obj, oname=oname, info=info, detail_level=detail_level)
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/oinspect.py", line 838, in info
+    if info and info.parent and hasattr(info.parent, HOOK_NAME):
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/pandas/core/generic.py", line 1527, in __nonzero__
+    raise ValueError(
+ValueError: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+[IPKernelApp] ERROR | Exception in message handler:
+Traceback (most recent call last):
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 409, in dispatch_shell
+    await result
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 798, in inspect_request
+    reply_content = self.do_inspect(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 555, in do_inspect
+    bundle = self.shell.object_inspect_mime(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/interactiveshell.py", line 1838, in object_inspect_mime
+    return self.inspector._get_info(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/oinspect.py", line 738, in _get_info
+    info_dict = self.info(obj, oname=oname, info=info, detail_level=detail_level)
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/oinspect.py", line 838, in info
+    if info and info.parent and hasattr(info.parent, HOOK_NAME):
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/pandas/core/generic.py", line 1527, in __nonzero__
+    raise ValueError(
+ValueError: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+[I 2023-05-30 15:26:06.186 ServerApp] Saving file at /vitessce_data_processing.ipynb
+[W 2023-05-30 15:26:06.187 ServerApp] Notebook vitessce_data_processing.ipynb is not trusted
+[IPKernelApp] ERROR | Exception in message handler:
+Traceback (most recent call last):
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 409, in dispatch_shell
+    await result
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 798, in inspect_request
+    reply_content = self.do_inspect(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 555, in do_inspect
+    bundle = self.shell.object_inspect_mime(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/interactiveshell.py", line 1838, in object_inspect_mime
+    return self.inspector._get_info(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/oinspect.py", line 738, in _get_info
+    info_dict = self.info(obj, oname=oname, info=info, detail_level=detail_level)
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/oinspect.py", line 838, in info
+    if info and info.parent and hasattr(info.parent, HOOK_NAME):
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/pandas/core/generic.py", line 1527, in __nonzero__
+    raise ValueError(
+ValueError: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+[IPKernelApp] ERROR | Exception in message handler:
+Traceback (most recent call last):
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 409, in dispatch_shell
+    await result
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 798, in inspect_request
+    reply_content = self.do_inspect(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 555, in do_inspect
+    bundle = self.shell.object_inspect_mime(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/interactiveshell.py", line 1838, in object_inspect_mime
+    return self.inspector._get_info(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/oinspect.py", line 738, in _get_info
+    info_dict = self.info(obj, oname=oname, info=info, detail_level=detail_level)
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/oinspect.py", line 838, in info
+    if info and info.parent and hasattr(info.parent, HOOK_NAME):
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/pandas/core/generic.py", line 1527, in __nonzero__
+    raise ValueError(
+ValueError: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+[IPKernelApp] ERROR | Exception in message handler:
+Traceback (most recent call last):
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 409, in dispatch_shell
+    await result
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 798, in inspect_request
+    reply_content = self.do_inspect(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 555, in do_inspect
+    bundle = self.shell.object_inspect_mime(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/interactiveshell.py", line 1838, in object_inspect_mime
+    return self.inspector._get_info(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/oinspect.py", line 738, in _get_info
+    info_dict = self.info(obj, oname=oname, info=info, detail_level=detail_level)
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/oinspect.py", line 838, in info
+    if info and info.parent and hasattr(info.parent, HOOK_NAME):
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/pandas/core/generic.py", line 1527, in __nonzero__
+    raise ValueError(
+ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+[I 2023-05-30 15:28:06.236 ServerApp] Saving file at /vitessce_data_processing.ipynb
+[W 2023-05-30 15:28:06.237 ServerApp] Notebook vitessce_data_processing.ipynb is not trusted
+[I 2023-05-30 15:30:06.291 ServerApp] Saving file at /vitessce_data_processing.ipynb
+[W 2023-05-30 15:30:06.292 ServerApp] Notebook vitessce_data_processing.ipynb is not trusted
+[I 2023-05-30 15:36:06.348 ServerApp] Saving file at /vitessce_data_processing.ipynb
+[W 2023-05-30 15:36:06.349 ServerApp] Notebook vitessce_data_processing.ipynb is not trusted
+[I 2023-05-30 15:44:06.407 ServerApp] Saving file at /vitessce_data_processing.ipynb
+[W 2023-05-30 15:44:06.408 ServerApp] Notebook vitessce_data_processing.ipynb is not trusted
+[I 2023-05-30 16:00:06.463 ServerApp] Saving file at /vitessce_data_processing.ipynb
+[W 2023-05-30 16:00:06.464 ServerApp] Notebook vitessce_data_processing.ipynb is not trusted
+[I 2023-05-30 16:02:06.528 ServerApp] Saving file at /vitessce_data_processing.ipynb
+[W 2023-05-30 16:02:06.529 ServerApp] Notebook vitessce_data_processing.ipynb is not trusted
+[I 2023-05-30 16:04:06.587 ServerApp] Saving file at /vitessce_data_processing.ipynb
+[W 2023-05-30 16:04:06.588 ServerApp] Notebook vitessce_data_processing.ipynb is not trusted
+slurmstepd: error: *** JOB 684872 ON c-11-12 CANCELLED AT 2023-05-30T23:09:20 DUE TO TIME LIMIT ***

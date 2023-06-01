@@ -1,0 +1,206 @@
+{
+    "name": "Test CODEX data",
+    "description": "HVCD1, region 1",
+    "version": "1.0.15",
+    "initStrategy": "auto",
+    "datasets": [
+      {
+        "uid": "smithd30",
+        "name": "smithd30",
+        "files": [
+          {
+            "fileType": "anndata.zarr",
+            "url": "https://vitessce-cell-data.s3.amazonaws.com/HVCD1_adata.zarr",
+            "coordinationValues": {
+              "obsType": "cell",
+              "featureType": "gene",
+              "featureValueType": "expression"
+            },
+            "options": {
+              "obsLocations": {
+                "path": "obsm/centroids"
+              },
+              "obsEmbedding": [
+                {
+                  "path": "obsm/X_umap",
+                  "embeddingType": "UMAP"
+                },
+                {
+                  "path": "obsm/X_pca",
+                  "dims": [
+                    4,
+                    5
+                  ],
+                  "embeddingType": "PCA"
+                }
+              ],
+              "obsSets": [
+                {
+                  "name": "Cell Type Annotations",
+                  "path": [
+                    "obs/new_pheno",
+                    "obs/motif_name"
+                  ]
+                }
+              ],
+              "obsFeatureMatrix": {
+                "path": "X"
+              }
+            }
+          },
+          {
+            "fileType": "obsSegmentations.json",
+            "url": "https://vitessce-cell-data.s3.amazonaws.com/hvcd1_r1_segmentations.json",
+            "coordinationValues": {
+              "obsType": "cell"
+            }
+          },
+          {
+            "fileType": "image.ome-zarr",
+            "url": "https://vitessce-cell-data.s3.amazonaws.com/HVCD1_ngff_image.zarr"
+          }
+        ]
+      }
+    ],
+    "coordinationSpace": {
+      "embeddingZoom": {
+        "UMAP": 0
+      },
+      "embeddingType": {
+        "UMAP": "UMAP"
+      },
+      "spatialImageLayer": {
+        "A": [
+          {
+            "type": "raster",
+            "index": 0,
+            "visible": true,
+            "colormap": null,
+            "opacity": 1,
+            "transparentColor": null,
+            "use3d": false,
+            "channels": [
+              {
+                "selection": {
+                  "c": 0
+                },
+                "color": [
+                  0,
+                  0,
+                  255
+                ],
+                "visible": true,
+                "slider": [
+                  1,
+                  1473
+                ]
+              },
+              {
+                "selection": {
+                  "c": 1
+                },
+                "color": [
+                  0,
+                  255,
+                  0
+                ],
+                "visible": true,
+                "slider": [
+                  1,
+                  447
+                ]
+              },
+              {
+                "selection": {
+                  "c": 2
+                },
+                "color": [
+                  255,
+                  0,
+                  0
+                ],
+                "visible": true,
+                "slider": [
+                  1,
+                  666
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "spatialSegmentationLayer": {
+        "A": {
+          "opacity": 1, "radius": 0, "visible": true, "stroked": false
+        }
+      }
+    },
+    "layout": [
+      {
+        "component": "description",
+        "x": 0,
+        "y": 0,
+        "w": 2,
+        "h": 1
+      },
+      {
+        "component": "layerController",
+        "coordinationScopes": {
+          "spatialImageLayer": "A",
+          "spatialSegmentationLayer": "A",
+          "spatialPointLayer": "A"
+        },
+        "x": 0,
+        "y": 1,
+        "w": 2,
+        "h": 4
+      },
+      {
+        "component": "status",
+        "x": 0,
+        "y": 5,
+        "w": 2,
+        "h": 1
+      },
+      {
+        "component": "spatial",
+        "coordinationScopes": {
+          "spatialZoom": "A",
+          "spatialTargetX": "A",
+          "spatialTargetY": "A",
+          "spatialImageLayer": "A",
+          "spatialSegmentationLayer": "A",
+          "spatialPointLayer": "A"
+        },
+        "x": 2,
+        "y": 0,
+        "w": 4,
+        "h": 4
+      },
+      {
+        "component": "featureList",
+        "x": 9,
+        "y": 0,
+        "w": 3,
+        "h": 2
+      },
+      {
+        "component": "obsSets",
+        "x": 9,
+        "y": 3,
+        "w": 3,
+        "h": 2
+      },
+      {
+        "component": "scatterplot",
+        "coordinationScopes": {
+          "embeddingType": "UMAP",
+          "embeddingZoom": "UMAP"
+        },
+        "x": 6,
+        "y": 0,
+        "w": 3,
+        "h": 4
+      }
+    ]
+  }

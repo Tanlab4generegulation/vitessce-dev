@@ -1,0 +1,73 @@
+[I 2023-04-25 15:54:31.637 ServerApp] jupyterlab | extension was successfully linked.
+[W 2023-04-25 15:54:31.645 NotebookApp] 'use_redirect_file' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-04-25 15:54:31.652 ServerApp] nbclassic | extension was successfully linked.
+[I 2023-04-25 15:54:31.723 LabApp] JupyterLab extension loaded from /home/smithd30/.local/lib/python3.7/site-packages/jupyterlab
+[I 2023-04-25 15:54:31.723 LabApp] JupyterLab application directory is /home/smithd30/.local/share/jupyter/lab
+[I 2023-04-25 15:54:31.727 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-04-25 15:54:31.749 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-04-25 15:54:31.749 ServerApp] Serving notebooks from local directory: /mnt/isilon/cscb/codex/pillaiv/SCTC-VP-15/vitessce-gh-pages/code
+[I 2023-04-25 15:54:31.749 ServerApp] Jupyter Server 1.21.0 is running at:
+[I 2023-04-25 15:54:31.749 ServerApp] http://m-5-02:8888/lab?token=4479cbbc80e5236709426416b639f68982d384a88ed6d1a9
+[I 2023-04-25 15:54:31.749 ServerApp]  or http://127.0.0.1:8888/lab?token=4479cbbc80e5236709426416b639f68982d384a88ed6d1a9
+[I 2023-04-25 15:54:31.749 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2023-04-25 15:54:31.760 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/smithd30/.local/share/jupyter/runtime/jpserver-3052452-open.html
+    Or copy and paste one of these URLs:
+        http://m-5-02:8888/lab?token=4479cbbc80e5236709426416b639f68982d384a88ed6d1a9
+     or http://127.0.0.1:8888/lab?token=4479cbbc80e5236709426416b639f68982d384a88ed6d1a9
+[W 2023-04-25 15:55:31.214 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2023-04-25 15:55:32.983 ServerApp] Notebook vitessce_data_processing.ipynb is not trusted
+[I 2023-04-25 15:55:34.882 ServerApp] Kernel started: 605450c5-b8c1-49e2-8dcb-99ed6559747f
+[I 2023-04-25 15:55:34.888 ServerApp] Kernel started: a0b26d2a-085d-4b29-a131-3bf4ba07b1d5
+[IPKernelApp] ERROR | Failed to create history session in /home/smithd30/.ipython/profile_default/history.sqlite. History will not be saved.
+Traceback (most recent call last):
+  File "/mnt/isilon/cscb/software/anaconda3/envs/imageAnalysis/lib/python3.10/site-packages/IPython/core/history.py", line 571, in __init__
+    self.new_session()
+  File "/mnt/isilon/cscb/software/anaconda3/envs/imageAnalysis/lib/python3.10/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/mnt/isilon/cscb/software/anaconda3/envs/imageAnalysis/lib/python3.10/site-packages/IPython/core/history.py", line 60, in only_when_enabled
+    return f(self, *a, **kw)
+  File "/mnt/isilon/cscb/software/anaconda3/envs/imageAnalysis/lib/python3.10/site-packages/IPython/core/history.py", line 595, in new_session
+    with conn:
+sqlite3.OperationalError: database is locked
+[IPKernelApp] ERROR | Failed to create history session in /home/smithd30/.ipython/profile_default/history.sqlite. History will not be saved.
+Traceback (most recent call last):
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/history.py", line 545, in __init__
+    self.new_session()
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/history.py", line 60, in only_when_enabled
+    return f(self, *a, **kw)
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/history.py", line 575, in new_session
+    self.session_number = cur.lastrowid
+sqlite3.OperationalError: database is locked
+[I 2023-04-25 15:57:34.245 ServerApp] Saving file at /vitessce_data_processing.ipynb
+[W 2023-04-25 15:57:34.246 ServerApp] Notebook vitessce_data_processing.ipynb is not trusted
+[I 2023-04-25 15:59:34.356 ServerApp] Saving file at /vitessce_data_processing.ipynb
+[W 2023-04-25 15:59:34.358 ServerApp] Notebook vitessce_data_processing.ipynb is not trusted
+[IPKernelApp] ERROR | Exception in message handler:
+Traceback (most recent call last):
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 409, in dispatch_shell
+    await result
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 798, in inspect_request
+    reply_content = self.do_inspect(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 555, in do_inspect
+    bundle = self.shell.object_inspect_mime(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/interactiveshell.py", line 1838, in object_inspect_mime
+    return self.inspector._get_info(
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/oinspect.py", line 738, in _get_info
+    info_dict = self.info(obj, oname=oname, info=info, detail_level=detail_level)
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/IPython/core/oinspect.py", line 838, in info
+    if info and info.parent and hasattr(info.parent, HOOK_NAME):
+  File "/mnt/isilon/cscb/software/anaconda3/envs/vitessce/lib/python3.8/site-packages/pandas/core/generic.py", line 1527, in __nonzero__
+    raise ValueError(
+ValueError: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+[I 2023-04-25 16:01:34.449 ServerApp] Saving file at /vitessce_data_processing.ipynb
+[W 2023-04-25 16:01:34.450 ServerApp] Notebook vitessce_data_processing.ipynb is not trusted
+[I 2023-04-25 16:03:34.541 ServerApp] Saving file at /vitessce_data_processing.ipynb
+[W 2023-04-25 16:03:34.542 ServerApp] Notebook vitessce_data_processing.ipynb is not trusted
+[I 2023-04-25 16:04:57.889 ServerApp] Kernel shutdown: 605450c5-b8c1-49e2-8dcb-99ed6559747f
+[I 2023-04-25 16:04:57.911 ServerApp] Kernel shutdown: a0b26d2a-085d-4b29-a131-3bf4ba07b1d5
+slurmstepd: error: *** JOB 12382865 ON m-5-02 CANCELLED AT 2023-04-25T16:05:20 ***

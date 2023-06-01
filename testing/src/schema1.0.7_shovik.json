@@ -1,0 +1,82 @@
+{
+    "version": "1.0.7", 
+    "name": "shovik_hubmap", 
+    "description": "Atlas of bone marrow immune cells", 
+    "datasets": [
+        {
+            "uid": "A", 
+            "name": "R1_reg1", 
+            "files": [
+                {
+                    "fileType": "anndata-cells.zarr", 
+                    "url": "https://vitessce-cell-data.s3.amazonaws.com/vite_adata.zarr", 
+                    "options": {
+                        "mappings": {"UMAP": {"key": "obsm/X_umap", "dims": [0, 1]}},
+                        "factors": [
+                            "obs/orig.ident",
+                            "obs/cluster_anno_coarse",
+                            "obs/cluster_anno_l1",
+                            "obs/cluster_anno_l2"
+                        ]
+                    }
+                },
+                {
+                    "fileType": "anndata-cell-sets.zarr", 
+                    "url": "https://vitessce-cell-data.s3.amazonaws.com/vite_adata.zarr", 
+                    "options": [
+                        {"groupName": "cell origin", "setName": "obs/orig.ident"}, 
+                        {"groupName": "coarse annotation", "setName": "obs/cluster_anno_coarse"},
+                        {"groupName": "l1 annotation", "setName": "obs/cluster_anno_l1"},
+                        {"groupName": "l2 annotation", "setName": "obs/cluster_anno_l2"}
+                    ]
+                }, 
+                {
+                    "fileType": "anndata-expression-matrix.zarr", 
+                    "url": "https://vitessce-cell-data.s3.amazonaws.com/vite_adata.zarr", 
+                    "options": {"matrix": "X"}
+                }
+            ]
+        }
+    ], 
+    "coordinationSpace": {"dataset": {"A": "A"}, "embeddingType": {"A": "UMAP"}}, 
+    "layout": [
+        {
+            "component": "description", 
+            "coordinationScopes": {"dataset": "A"}, "x": 0, "y": 8, "w": 2, "h": 1
+        }, 
+        {
+            "component": "scatterplot", 
+            "coordinationScopes": {"dataset": "A", "embeddingType": "A"}, 
+            "x": 0, 
+            "y": 0, 
+            "w": 8, 
+            "h": 8
+        }, 
+        {
+            "component": "cellSets", 
+            "coordinationScopes": {"dataset": "A"}, 
+            "x": 8, 
+            "y": 0, 
+            "w": 3, 
+            "h": 3
+        }, 
+        {
+            "component": "genes", 
+            "coordinationScopes": {"dataset": "A"}, 
+            "x": 8, 
+            "y": 3, 
+            "w": 3, 
+            "h": 3, 
+            "props": {"variablesLabelOverride": "antigen"}
+        },
+        {
+            "component": "obsSetFeatureValueDistribution",
+            "coordinationScopes": {"dataset": "A"},
+            "x": 8,
+            "y": 6,
+            "w": 3,
+            "h": 3
+        }
+    ], 
+    "initStrategy": "auto"
+}
